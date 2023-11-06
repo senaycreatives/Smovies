@@ -18,23 +18,35 @@ export default function Navbar() {
           <h1 className=" font-bold text-white  font-Imprima pt-6">.com</h1>
         </div>
         <div className="h-full flex flex-row items-center">
-          <h1 className="  text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
-            <Link to="/" className=" pr-5 text-[14px]"> HOME</Link>
-            <div className=" w-[1px] h-[9px] bg-white"></div>
+          <h1 className="  group  hover:text-lime-400 text-white    flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
+            <Link to="/" className=" pr-5 text-[14px]">
+              {" "}
+              HOME
+            </Link>
+            <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
           </h1>
-          <h1 className="  text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
-           <Link to = "/movie" className=" pr-5 text-[14px]"> MOVIE</Link>
-            <div className=" w-[1px] h-[9px] bg-white"></div>
+          <h1 className="  group  hover:text-lime-400 text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
+            <Link to="/movie" className=" pr-5 text-[14px]">
+              {" "}
+              MOVIE
+            </Link>
+            <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px]  group-hover:bg-lime-400"></div>
           </h1>
 
-          <h1 className="  text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
-            <Link to = "/tvseries" className=" pr-5 text-[14px]"> TVSERIES</Link>
-            <div className=" w-[1px] h-[9px] bg-white"></div>
+          <h1 className="  group  hover:text-lime-400 text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
+            <Link to="/tvseries" className=" pr-5 text-[14px]">
+              {" "}
+              TVSERIES
+            </Link>
+            <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
           </h1>
 
-          <h1 className="  text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
-            <Link to = "/Genre" className=" pr-5 text-[14px]"> Genre </Link>
-            <div className=" w-[1px] h-[9px] bg-white"></div>
+          <h1 className=" group   hover:text-lime-400 text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
+            <Link to="/Genre" className=" pr-5 text-[14px]">
+              {" "}
+              GENERE
+            </Link>
+            <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
           </h1>
         </div>
         <div className="h-full flex flex-row items-center mx-4">
