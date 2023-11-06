@@ -1,7 +1,12 @@
 import React from "react";
+<<<<<<< HEAD:src/Home.js
 import Headerbanner from "./Headerbanner";
 import bg from "./Asset/bg.png";
 import MovieCards from "./MovieCards";
+=======
+import Headerbanner from "../Headerbanner";
+import bg from "../Asset/bg.png";
+>>>>>>> fea24f811bb0094ec19914c2c2fa2288281ea10a:src/pages/Home.js
 
 export default function Home() {
   return (
