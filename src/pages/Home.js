@@ -1,6 +1,6 @@
 import React from "react";
-import Headerbanner from "./Headerbanner";
-import bg from "./Asset/bg.png";
+import Headerbanner from "../Headerbanner";
+import bg from "../Asset/bg.png";
 
 export default function Home() {
   return (
