@@ -6,10 +6,12 @@ import TvSeries from "./pages/TvSeries";
 import Genre from "./pages/Genre";
 import MovieDetail from "./pages/MovieDetail";
 import Footer from "./Footer";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <div className=" min-h-screen min-w-full  bg-contain overflow-hidden">
+      <Navbar />
       <Routes>
         <Route index element={<Home />} />
         <Route path="Movie" element={<Movie />} />
