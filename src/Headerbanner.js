@@ -11,10 +11,10 @@ export default function Headerbanner() {
         backgroundImage: `url(${genvmovie})`,
       }}
     >
-          <Navbar />
-      <div className="bg-text  flex  flex-col justify-center  pl-3  ">
+      <Navbar />
+      <div className=" bg-text  flex  flex-col justify-end pb-12  pl-3  ">
         <h1 className=" font-bold  text-4xl text-white mb-5">
-          Attack on Titan
+          Avator ( the way of water)
         </h1>
         <p className=" text-white w-[600px] line-clamp-2  ">
           From the world of "The Boys" comes "Gen V," which explores the first
