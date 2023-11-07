@@ -14,11 +14,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="Movie" element={<Movie />} />
-<<<<<<< HEAD
-        <Route path="tvseries" element={<TvSeries />} />
-=======
         <Route path="TvSeries" element={<TvSeries />} />
->>>>>>> 9994b6dddeceececcdc442abacbd16d8298788ba
         <Route path="Genre" element={<Genre />} />
       </Routes>
       <Footer />
