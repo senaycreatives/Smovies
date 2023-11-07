@@ -2,7 +2,7 @@ import React from "react";
 import genvmovie from "./Asset/avator.jpg";
 export default function MovieCards() {
   return (
-    <div className=" w-[240px] mt-9   overflow-hidden flex-shrink-0   mx-7  h-[300px] ">
+    <div className=" w-[240px] mt-9   overflow-hidden flex-shrink-0   mx-7  h-[300px]">
       <div
         className=" h-[250px] rounded-[5px] overflow-hidden w-full bg-cover bg-center bg-no-repeat "
         style={{
