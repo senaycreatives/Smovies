@@ -11,7 +11,6 @@ export default function Headerbanner() {
         backgroundImage: `url(${genvmovie})`,
       }}
     >
-      <Navbar />
       <div className=" bg-text  flex  flex-col justify-end pb-12  pl-3  ">
         <h1 className=" font-bold  text-4xl text-white mb-5">
           Avator ( the way of water)
