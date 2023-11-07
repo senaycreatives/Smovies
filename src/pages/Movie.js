@@ -36,6 +36,19 @@ function Movie() {
           <MovieCards />
           <MovieCards />
         </div>
+<<<<<<< HEAD
+=======
+          <div className="  w-full mt-5 px-5  z-10  flex  flex-row flex-wrap">
+              <MovieCards />
+              <MovieCards />
+              <MovieCards />
+              <MovieCards />
+              <MovieCards />
+              <MovieCards />
+              <MovieCards />
+              <MovieCards />
+          </div>
+>>>>>>> 9994b6dddeceececcdc442abacbd16d8298788ba
       </div>
     </div>
   );
