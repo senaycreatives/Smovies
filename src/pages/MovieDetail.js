@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
 function MovieDetail() {
   return (
-    <div>
-      <h1>Movie name</h1>
-    </div>
-  )
+    <div className="  pt-[70px] min-h-screen min-w-screen bg-zinc-900 "></div>
+  );
 }
 
-export default MovieDetail
+export default MovieDetail;

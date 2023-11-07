@@ -4,7 +4,7 @@ import Navbar from "../Navbar";
 
 function Movie() {
   return (
-    <div className="min-h-screen min-w-screen bg-zinc-900 ">
+    <div className="pt-[70px] min-h-screen min-w-screen bg-zinc-900 ">
       <Navbar />
       <div className="pagess  min-h-screen w-screen bg-cover">
         <div className=" w-full h-[50px]  pt-4 flex items-center ">
