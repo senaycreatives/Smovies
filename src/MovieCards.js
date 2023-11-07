@@ -1,9 +1,10 @@
 import React from "react";
 import genvmovie from "./Asset/avator.jpg";
 import { FaPlayCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export default function MovieCards() {
   return (
-    <div className=" w-[220px] mt-9  group  hover:scale-105 transition-all duration-200 overflow-hidden flex-shrink-0   mx-7  h-[300px] ">
+    <Link to="/movie/1" className=" w-[220px] mt-9  group  hover:scale-105 transition-all duration-200 overflow-hidden flex-shrink-0   mx-7  h-[300px] ">
       <div
         className=" h-[250px] relative rounded-[5px] overflow-hidden w-full bg-cover bg-center bg-no-repeat "
         style={{
@@ -34,6 +35,6 @@ export default function MovieCards() {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
