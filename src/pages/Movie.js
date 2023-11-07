@@ -27,7 +27,7 @@ function Movie() {
                 Top Rated
               </p>
         </div>
-          <div className=" mb-3 w-full mt-5 px-5  z-10  flex  flex-row flex-wrap">
+          <div className="  w-full mt-5 px-5  z-10  flex  flex-row flex-wrap">
               <MovieCards />
               <MovieCards />
               <MovieCards />
