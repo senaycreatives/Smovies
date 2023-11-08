@@ -1,14 +1,16 @@
 import React from "react";
-import genvmovie from "./Asset/avator.jpg";
-import Navbar from "./Navbar";
+import avator from "./Asset/avator.jpg";
+
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaPlayCircle } from "react-icons/fa";
-export default function Headerbanner({ name }) {
+import Movie from "./pages/Movie";
+
+export default function Headerbanner({ name, MovieImage }) {
   return (
     <div
       className="  relative  h-full w-screen bg-zinc-700 bg-cover flex-shrink-0"
       style={{
-        backgroundImage: `url(${genvmovie})`,
+        backgroundImage: `url(${MovieImage})`,
       }}
     >
       <div className=" bg-text pl-3 absolute w-full h-full  flex  flex-col justify-end pb-12    ">

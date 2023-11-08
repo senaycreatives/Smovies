@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Headerbanner from "./Headerbanner";
+import genvmovie from "./Asset/genv.jpg";
+import avator from "./Asset/avator.jpg";
+import newimage from "./Asset/new.jpg";
+
+import Navbar from "./Navbar";
 
 export default function HeaderBannerSlide() {
   const [current, setCurrent] = useState(0);
@@ -22,11 +27,11 @@ export default function HeaderBannerSlide() {
       <div
         className={`  translate-x-[-${
           current * 100
-        }%] duration-500  w-full h-screen flex flex-row`}
+        }%]  duration-1000  w-full h-screen flex flex-row`}
       >
-        <Headerbanner name={"Avator"} />
-        <Headerbanner name={"HEllo"} />
-        <Headerbanner name={"thired"} />
+        <Headerbanner MovieImage={genvmovie} name={"Avator"} />
+        <Headerbanner MovieImage={avator} name={"HEllo"} />
+        <Headerbanner MovieImage={newimage} name={"thired"} />
       </div>
     </div>
   );
