@@ -13,7 +13,7 @@ export default function Headerbanner() {
     >
       <div className=" bg-text  flex  flex-col justify-end pb-12  pl-3  ">
         <h1 className=" font-bold  text-4xl text-white mb-5">
-          Avator ( the way of water)
+          Avatar ( the way of water)
         </h1>
         <p className=" text-white w-[600px] line-clamp-2  ">
           From the world of "The Boys" comes "Gen V," which explores the first
