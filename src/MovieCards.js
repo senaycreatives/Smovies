@@ -11,7 +11,7 @@ export default function MovieCards() {
           backgroundImage: `url(${genvmovie})`,
         }}
       >
-        <div className=" moviecard  absolute flex items-center justify-center h-full w-full group-hover:visible group-hover:opacity-100 opacity-0 transition-opacity  duration-300 cursor-pointer  invisible">
+        <div className=" moviecard  absolute flex items-center justify-center h-full w-full group-hover:visible group-hover:opacity-60 opacity-0 transition-opacity  duration-300 cursor-pointer  invisible">
           <FaPlayCircle size={60} className=" text-lime-950" />
         </div>
       </div>
