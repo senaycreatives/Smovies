@@ -6,7 +6,7 @@ import HeaderBannerSlide from "../HeaderBannerSlide";
 
 export default function Home() {
   return (
-    <div className="min-h-screen min-w-screen bg-zinc-900  ">
+    <div className="min-h-screen w-screen bg-zinc-900  ">
       <HeaderBannerSlide />
       <div className="pagess pl-3  min-h-screen w-screen bg-cover pb-6">
         <div className=" w-full h-[50px]  pt-4 flex items-center ">

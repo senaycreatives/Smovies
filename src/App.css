@@ -7,7 +7,7 @@
 }
 .bg-text {
   left: 0;
-  z-index: 5;
+
   top: 0;
 
   background: linear-gradient(
@@ -19,9 +19,9 @@
 }
 .navbar {
   height: 70px;
-  width: 100%;
+
   left: 0;
-  z-index: 4;
+  z-index: 30;
   top: 0;
 
   position: absolute;
@@ -31,6 +31,21 @@
     rgba(0, 0, 0, 0.699334733893557) 15%,
     rgba(0, 212, 255, 0) 100%
   );
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(105, 231, 27);
 }
 .moviecard {
   background: linear-gradient(

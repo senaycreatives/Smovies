@@ -3,18 +3,16 @@ import genvmovie from "./Asset/avator.jpg";
 import Navbar from "./Navbar";
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaPlayCircle } from "react-icons/fa";
-export default function Headerbanner() {
+export default function Headerbanner({ name }) {
   return (
     <div
-      className="  relative  h-screen w-screen bg-zinc-700 bg-cover flex-shrink-0"
+      className="  relative  h-full w-screen bg-zinc-700 bg-cover flex-shrink-0"
       style={{
         backgroundImage: `url(${genvmovie})`,
       }}
     >
-      <div className=" bg-text absolute w-full h-full  flex  flex-col justify-end pb-12  pl-3  ">
-        <h1 className=" font-bold  text-4xl text-white mb-5">
-          Avatar ( the way of water)
-        </h1>
+      <div className=" bg-text pl-3 absolute w-full h-full  flex  flex-col justify-end pb-12    ">
+        <h1 className=" font-bold  text-4xl text-white mb-5">{name}</h1>
         <p className=" text-white w-[600px] line-clamp-2  ">
           From the world of "The Boys" comes "Gen V," which explores the first
           generation of superheroes to know that their super powers are from
@@ -24,7 +22,7 @@ export default function Headerbanner() {
         <div className="h-[50px] flex flex-row">
           <div className=" w-[80px] font-bold text-black h-[20px] mt-3 flex items-center justify-center  rounded-full  text-xs bg-yellow-600">
             IMDB-7.08
-          </div>{" "}
+          </div>
           <div className=" mx-2 w-[40px] font-bold text-black h-[20px] mt-3 flex items-center justify-center  rounded-full  text-xs bg-lime-600">
             HD
           </div>
