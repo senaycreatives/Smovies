@@ -1,7 +1,7 @@
 import React from "react";
 import Headerbanner from "../Headerbanner";
 import MovieCards from "../MovieCards";
-import bg from "../Asset/bg.png";
+
 import HeaderBannerSlide from "../HeaderBannerSlide";
 
 export default function Home() {
