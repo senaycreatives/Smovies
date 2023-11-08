@@ -2,11 +2,12 @@ import React from "react";
 import Headerbanner from "../Headerbanner";
 import MovieCards from "../MovieCards";
 import bg from "../Asset/bg.png";
+import HeaderBannerSlide from "../HeaderBannerSlide";
 
 export default function Home() {
   return (
     <div className="min-h-screen min-w-screen bg-zinc-900  ">
-      <Headerbanner />
+      <HeaderBannerSlide />
       <div className="pagess pl-3  min-h-screen w-screen bg-cover pb-6">
         <div className=" w-full h-[50px]  pt-4 flex items-center ">
           <p className="  text-2xl font-bold  font-Imprima  text-white">

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="  h-[70px] w-full absolute top-0 left-0 ">
+    <div className="  h-[70px] w-full absolute top-0 left-0 z-10 ">
       <div className=" w-full h-full   navbar flex flex-row justify-between px-2">
         <div className="h-full flex flex-row items-center">
           <img src={logo} className=" h-full   object-center" />

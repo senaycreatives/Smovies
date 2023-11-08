@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 
 function App() {
   return (
-    <div className=" min-h-screen min-w-full  bg-contain overflow-hidden">
+    <div className=" min-h-screen min-w-full  bg-contain  ">
       <Navbar />
       <Routes>
         <Route index element={<Home />} />

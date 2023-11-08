@@ -6,12 +6,12 @@ import { FaPlayCircle } from "react-icons/fa";
 export default function Headerbanner() {
   return (
     <div
-      className="h-screen w-screen bg-zinc-700 bg-cover"
+      className="  relative  h-screen w-screen bg-zinc-700 bg-cover flex-shrink-0"
       style={{
         backgroundImage: `url(${genvmovie})`,
       }}
     >
-      <div className=" bg-text  flex  flex-col justify-end pb-12  pl-3  ">
+      <div className=" bg-text absolute w-full h-full  flex  flex-col justify-end pb-12  pl-3  ">
         <h1 className=" font-bold  text-4xl text-white mb-5">
           Avator ( the way of water)
         </h1>
