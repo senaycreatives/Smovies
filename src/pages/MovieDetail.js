@@ -10,7 +10,7 @@ function MovieDetail() {
   const { data } = UseFetchMovieData(movieId);
 
   const videoUrl = `https://vidsrc.to/embed/${
-    data?.Type == "series" ? "tv" : "movie"
+    data?.Type === "series" ? "tv" : "movie"
   }/${movieId}`;
   return (
     <div className="  pt-[70px] min-h-screen  pb-[70px] min-w-screen flex items-center  flex-col justify-center bg-zinc-900 ">
@@ -35,7 +35,7 @@ function MovieDetail() {
       </div>
       <div className="  flex   w-11/12 flex-row mt-[50px]">
         <div className=" flex flex-[0.7]  h-[250px]">
-          <img className=" h-full w-[200px]  " src={data?.Poster} />
+          <img className=" h-full w-[200px]  " alt="jj" src={data?.Poster} />
           <div className="  flex-1 flex flex-col  px-4">
             <div className=" h-[50px]   border-b-white  border-b-2 flex justify-center flex-col border-opacity-20 ">
               <p className=" text-2xl text-white font-bold font-Imprima">

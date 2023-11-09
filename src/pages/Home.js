@@ -7,8 +7,8 @@ import UseFetchNewMovies from "../hooks/UseFetchNewMovies";
 import UseFetchNewTv from "../hooks/UseFetchNewTv";
 
 export default function Home() {
-  const { data, isError } = UseFetchNewMovies();
-  const { data: TV, isError: istvfetcherror } = UseFetchNewTv();
+  const { data } = UseFetchNewMovies();
+  const { data: TV } = UseFetchNewTv();
   console.log(data);
   return (
     <div className="min-h-screen w-screen dark:bg-zinc-900 bg-zinc-200  ">

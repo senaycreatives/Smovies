@@ -1,5 +1,4 @@
 import React from "react";
-import avator from "./Asset/avator.jpg";
 
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaPlayCircle } from "react-icons/fa";

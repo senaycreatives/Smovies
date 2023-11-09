@@ -21,7 +21,7 @@ export default function Navbar() {
     <div className="  h-[70px] w-screen absolute top-0 left-0 z-20 ">
       <div className=" w-full h-full   navbar flex flex-row justify-between px-2">
         <div className="h-full flex flex-row items-center">
-          <img src={logo} className=" h-full   object-center" />
+          <img src={logo} alt="logo" className=" h-full   object-center" />
           <h1 className=" font-bold text-white  font-Imprima pt-6">.com</h1>
         </div>
         <div className="h-full flex flex-row items-center">
