@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCards from "../MovieCards";
-import Navbar from "../Navbar";
+
 import UseFetchAddMovie from "../hooks/UseRecentAdd";
 import UseFetchNewMovies from "../hooks/UseFetchNewMovies";
 

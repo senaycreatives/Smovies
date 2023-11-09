@@ -1,8 +1,7 @@
 import React from "react";
-import { DefaultPlayer as Video } from "react-html5video";
+
 import "react-html5video/dist/styles.css";
-import bg from "../Asset/genv.jpg";
-import { FaStar } from "react-icons/fa";
+
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { useParams } from "react-router-dom";
 import UseFetchMovieData from "../hooks/UseFetchMovieData";

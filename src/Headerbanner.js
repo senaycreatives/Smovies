@@ -3,7 +3,7 @@ import avator from "./Asset/avator.jpg";
 
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaPlayCircle } from "react-icons/fa";
-import Movie from "./pages/Movie";
+
 import UseFetchMovieData from "./hooks/UseFetchMovieData";
 
 export default function Headerbanner({ id }) {

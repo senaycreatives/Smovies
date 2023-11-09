@@ -1,5 +1,5 @@
 import React from "react";
-import Headerbanner from "../Headerbanner";
+
 import MovieCards from "../MovieCards";
 
 import HeaderBannerSlide from "../HeaderBannerSlide";

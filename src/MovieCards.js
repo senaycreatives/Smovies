@@ -1,5 +1,5 @@
 import React from "react";
-import genvmovie from "./Asset/avator.jpg";
+
 import { FaPlayCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import UseFetchMovieData from "./hooks/UseFetchMovieData";

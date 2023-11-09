@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import logo from "../src/Asset/logo.svg";
-import {
-  AiOutlineSearch,
-  AiFillFileWord,
-  AiOutlineArrowDown,
-} from "react-icons/ai";
+import { AiOutlineSearch } from "react-icons/ai";
 import { BiWorld } from "react-icons/bi";
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";

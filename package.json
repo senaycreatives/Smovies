@@ -2,6 +2,7 @@
   "name": "smovies",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://vidsrc.to",
   "dependencies": {
     "@jwplayer/jwplayer-react": "^1.1.3",
     "@tanstack/react-query": "^5.8.1",
