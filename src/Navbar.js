@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../src/Asset/logo.svg";
 import {
   AiOutlineSearch,
@@ -8,8 +8,19 @@ import {
 import { BiWorld } from "react-icons/bi";
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import useDarkSide from "./UseDarkSide";
+import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 export default function Navbar() {
+  const [colorTheme, setTheme] = useDarkSide();
+  const [darkSide, setDarkSide] = useState(
+    colorTheme === "light" ? true : false
+  );
+
+  const toggleDarkMode = (checked) => {
+    setTheme(colorTheme);
+    setDarkSide(checked);
+  };
   return (
     <div className="  h-[70px] w-screen absolute top-0 left-0 z-20 ">
       <div className=" w-full h-full   navbar flex flex-row justify-between px-2">
@@ -51,6 +62,12 @@ export default function Navbar() {
         </div>
         <div className="h-full flex flex-row items-center mx-4">
           <AiOutlineSearch size={25} className=" text-white mx-2" />
+          <DarkModeSwitch
+            checked={darkSide}
+            onChange={toggleDarkMode}
+            sunColor="orange"
+            size={25}
+          />
           <div className=" h-full flex items-center justify-center mx-2">
             <BiWorld size={25} className=" text-lime-500  mx-1" />
             <h1 className=" font-bold text-white text-[15px] font-Imprima ">

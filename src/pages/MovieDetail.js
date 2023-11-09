@@ -4,8 +4,15 @@ import "react-html5video/dist/styles.css";
 import bg from "../Asset/genv.jpg";
 import { FaStar } from "react-icons/fa";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import { useParams } from "react-router-dom";
+import UseFetchMovieData from "../hooks/UseFetchMovieData";
 function MovieDetail() {
-  const videoUrl = "https://vidsrc.to/embed/tv/tt3107288";
+  const { movieId } = useParams();
+  const { data } = UseFetchMovieData(movieId);
+
+  const videoUrl = `https://vidsrc.to/embed/${
+    data?.Type == "series" ? "tv" : "movie"
+  }/${movieId}`;
   return (
     <div className="  pt-[70px] min-h-screen  pb-[70px] min-w-screen flex items-center  flex-col justify-center bg-zinc-900 ">
       <div className=" w-full h-[30px]  pt-1 flex items-center ">
@@ -29,45 +36,34 @@ function MovieDetail() {
       </div>
       <div className="  flex   w-11/12 flex-row mt-[50px]">
         <div className=" flex flex-[0.7]  h-[250px]">
-          <img
-            className=" h-full w-[200px]  "
-            src={
-              "https://m.media-amazon.com/images/M/MV5BZDcwMzU4NWYtODIzZi00Yzg4LWJhOTAtOTQ2ZDA4NmFlYmFlXkEyXkFqcGdeQXVyMTY1MTU3NDY5._V1_SX300.jpg"
-            }
-          />
+          <img className=" h-full w-[200px]  " src={data?.Poster} />
           <div className="  flex-1 flex flex-col  px-4">
             <div className=" h-[50px]   border-b-white  border-b-2 flex justify-center flex-col border-opacity-20 ">
               <p className=" text-2xl text-white font-bold font-Imprima">
-                The Flash(2003)
+                {data?.Title}
               </p>
             </div>
             <div className="h-[20px]  mt-1 flex flex-row items-center">
               <div className="h-full border-r-2 border-r-white border-opacity-40 px-2">
-                <p className=" text-sm text-white">0Min</p>
+                <p className=" text-sm text-white">{data?.Runtime}</p>
               </div>
               <div className="h-full border-r-2 border-r-white border-opacity-40 px-2">
-                <p className=" text-sm text-white">Action, Adventure, Drama</p>
+                <p className=" text-sm text-white">{data?.Genre}</p>
               </div>
               <div className="h-full border-r-2 border-r-white border-opacity-40 px-2">
-                <p className=" text-sm text-white">07 Oct 2014</p>
+                <p className=" text-sm text-white">{data?.Released}</p>
               </div>
               <div className="h-full border-r-2 border-r-white flex flex-row border-opacity-40 px-2">
                 <p className=" text-sm  text-lime-400">Imdb-</p>
-                <p className=" text-sm text-white">7.5/10</p>
+                <p className=" text-sm text-white">{data?.imdbRating}</p>
               </div>
             </div>
             <div className="h-[60px]  mt-1 flex flex-row items-center">
-              <p className=" text-sm text-white ">
-                After being struck by lightning, Barry Allen wakes up from his
-                coma to discover he's been given the power of super speed,
-                becoming the Flash, and fighting crime in Central City.
-              </p>
+              <p className=" text-sm text-white ">{data?.Plot}</p>
             </div>
             <p className=" text-white font-bold">Casts</p>
             <div className=" h-[50px] w-full ">
-              <p className=" text-sm text-white ">
-                "Grant Gustin, Candice Patton, Danielle Panabaker"
-              </p>
+              <p className=" text-sm text-white ">{data?.Actors}</p>
             </div>
             <p className=" text-white font-bold">Rating</p>
 

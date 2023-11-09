@@ -5,6 +5,7 @@ import avator from "./Asset/avator.jpg";
 import newimage from "./Asset/new.jpg";
 
 import Navbar from "./Navbar";
+import UseFetchNewMovies from "./hooks/UseFetchNewMovies";
 
 export default function HeaderBannerSlide() {
   const [current, setCurrent] = useState(0);
@@ -21,6 +22,7 @@ export default function HeaderBannerSlide() {
 
     return () => clearInterval(interval);
   }, [current]);
+  const { data, isError } = UseFetchNewMovies();
 
   return (
     <div className="   w-screen  h-screen   ">
@@ -29,9 +31,15 @@ export default function HeaderBannerSlide() {
           current * 100
         }%]  duration-1000  w-full h-screen flex flex-row`}
       >
-        <Headerbanner MovieImage={genvmovie} name={"Avator"} />
-        <Headerbanner MovieImage={avator} name={"HEllo"} />
-        <Headerbanner MovieImage={newimage} name={"thired"} />
+        {data?.result?.items.slice(0, 5).map((movie, index) => {
+          return (
+            <Headerbanner
+              MovieImage={genvmovie}
+              id={movie.imdb_id}
+              name={movie.title}
+            />
+          );
+        })}
       </div>
     </div>
   );
