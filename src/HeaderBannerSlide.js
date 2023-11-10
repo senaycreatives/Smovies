@@ -25,7 +25,7 @@ export default function HeaderBannerSlide() {
     <div className="w-screen h-screen">
       <div
         className="duration-1000 w-full h-screen transform flex flex-row"
-        style={{ transform: `translateX(-${current * 100}%)` }}
+        style={{ "--tw-translate-x": `-${current * 100}%` }}
       >
         {data?.result?.items.slice(0, 5).map((movie, index) => {
           return (
