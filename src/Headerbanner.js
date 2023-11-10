@@ -10,7 +10,7 @@ export default function Headerbanner({ id }) {
 
   return (
     <div
-      className="  relative  h-full w-screen bg-zinc-700  bg-fulls bg-no-repeat flex-shrink-0"
+      className="  relative  h-full w-screen bg-zinc-700   bg-contain  flex-shrink-0"
       style={{
         backgroundImage: `url(${data?.Poster})`,
       }}
