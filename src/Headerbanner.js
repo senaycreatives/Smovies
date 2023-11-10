@@ -3,6 +3,7 @@ import { AiFillClockCircle } from "react-icons/ai";
 import { FaPlayCircle } from "react-icons/fa";
 
 import UseFetchMovieData from "./hooks/UseFetchMovieData";
+import { Link } from "react-router-dom";
 
 export default function Headerbanner({ id }) {
   const { data } = UseFetchMovieData(id);
@@ -31,10 +32,13 @@ export default function Headerbanner({ id }) {
             {data?.Genre}
           </div>
         </div>
-        <div className="w-[140px] mt-5 h-[50px] rounded-md flex items-center justify-center bg-lime-400">
+        <Link
+          to={`/movie/${data?.imdbID}`}
+          className="w-[140px] mt-5 h-[50px] rounded-md flex items-center justify-center bg-lime-400"
+        >
           <p className="font-bold mx-2">Play Now</p>
           <FaPlayCircle className="after:text-transparent h-[40px] w-[40px]" />
-        </div>
+        </Link>
       </div>
     </div>
   );

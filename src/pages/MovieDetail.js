@@ -87,7 +87,7 @@ function MovieDetail() {
             </div>
           </div>
         </div>
-        <div className="  flex flex-[0.3] items-center flex-col p-3 dark:bg-zinc-800 bg-zinc-50 rounded-md shadow-md shadow-gray-700 h-[250px]">
+        <div className="  flex flex-[0.3] items-center flex-col p-3 dark:bg-zinc-800 bg-zinc-100 rounded-md  border-l-2 border-slate-400 shadow-gray-700 h-[250px]">
           <p className=" dark:text-white text-black font-bold">Direct Link</p>
           <div className=" border-2 hover:bg-lime-400  rounded-md cursor-pointer dark:border-white dark:border-opacity-5 border-black border-opacity-5  w-full h-[50px] flex items-center justify-center mt-3">
             <p className="  dark:text-white text-black">filemoon</p>

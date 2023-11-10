@@ -7,6 +7,7 @@ import Genre from "./pages/Genre";
 import MovieDetail from "./pages/MovieDetail";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="TvSeries" element={<TvSeries />} />
         <Route path="Genre" element={<Genre />} />
         <Route path="/movie/:movieId" element={<MovieDetail />} />
+        <Route path="/search/:searchtext" element={<Search />} />
       </Routes>
       <Footer />
     </div>
