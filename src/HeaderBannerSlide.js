@@ -6,30 +6,31 @@ import UseFetchNewMovies from "./hooks/UseFetchNewMovies";
 export default function HeaderBannerSlide() {
   const [current, setCurrent] = useState(0);
 
-  useEffect(() => {
-    const changeslide = () => {
-      const nextPage = (current + 1) % 3;
-      setCurrent(nextPage);
-    };
+  const changeSlide = () => {
+    const nextPage = (current + 1) % 10;
+    setCurrent(nextPage);
+  };
 
+  useEffect(() => {
     const interval = setInterval(() => {
-      changeslide();
-    }, 6000);
+      changeSlide();
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [current]);
+
   const { data } = UseFetchNewMovies();
 
   return (
-    <div className="   w-screen  h-screen   ">
+    <div className="w-screen h-screen">
       <div
-        className={`  translate-x-[-${
-          current * 100
-        }%]  duration-1000  w-full h-screen flex flex-row`}
+        className="duration-1000 w-full h-screen transform flex flex-row"
+        style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {data?.result?.items.slice(0, 5).map((movie, index) => {
           return (
             <Headerbanner
+              key={index}
               MovieImage={genvmovie}
               id={movie.imdb_id}
               name={movie.title}
