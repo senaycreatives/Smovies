@@ -67,7 +67,7 @@ export default function Navbar() {
             ></input>
           </div>
           <Link
-            to={Search == "" ? "#" : `search/${Search}`}
+            to={Search === "" ? "#" : `search/${Search}`}
             className=" w-[40px]  flex items-center justify-center h-[40px] mx-2"
           >
             <AiOutlineSearch

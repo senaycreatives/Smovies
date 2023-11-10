@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+
 import { Link } from "react-router-dom";
 
 export default function SearchCards({ title, poster, id, Type, Year }) {

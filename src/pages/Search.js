@@ -29,10 +29,10 @@ export default function Search() {
         })}
       </div>
 
-      {data?.Response == "False" && (
+      {data?.Response === "False" && (
         <>
           <div className=" mt-[100px] w-[200px] h-[200px]  ">
-            <img src={search} />
+            <img alt="images" src={search} />
           </div>
           <p className=" text-white text-sm  font-Imprima ">
             {data?.Error} for "{searchtext}"
