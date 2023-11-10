@@ -7,7 +7,7 @@ export default function HeaderBannerSlide() {
   const [current, setCurrent] = useState(0);
 
   const changeSlide = () => {
-    const nextPage = (current + 1) % 10;
+    const nextPage = (current + 1) % 5;
     setCurrent(nextPage);
   };
 
