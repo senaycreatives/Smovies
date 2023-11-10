@@ -1,8 +1,6 @@
 import React from "react";
 import { AiFillClockCircle } from "react-icons/ai";
 import { FaPlayCircle } from "react-icons/fa";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 import UseFetchMovieData from "./hooks/UseFetchMovieData";
 
