@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Headerbanner from "./Headerbanner";
 import genvmovie from "./Asset/genv.jpg";
 import UseFetchNewMovies from "./hooks/UseFetchNewMovies";
@@ -6,10 +6,10 @@ import UseFetchNewMovies from "./hooks/UseFetchNewMovies";
 export default function HeaderBannerSlide() {
   const [current, setCurrent] = useState(0);
 
-  const changeSlide = () => {
+  const changeSlide = useCallback(() => {
     const nextPage = (current + 1) % 5;
     setCurrent(nextPage);
-  };
+  }, [current]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -17,7 +17,7 @@ export default function HeaderBannerSlide() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [current]);
+  }, [changeSlide]);
 
   const { data } = UseFetchNewMovies();
 
