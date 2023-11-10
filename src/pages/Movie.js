@@ -8,7 +8,7 @@ function Movie() {
   const { data } = UseFetchAddMovie();
   const { data: newmovies } = UseFetchNewMovies();
   return (
-    <div className=" pt-[70px] min-h-screen min-w-screen dark:bg-zinc-900 bg-zinc-200 ">
+    <div className=" pt-[70px] min-h-screen min-w-screen dark:bg-zinc-900 pb-6 bg-zinc-100 ">
       <div className="bg-cuspage px-3  min-h-screen w-screen bg-cover">
         <div className=" w-full h-[50px]  pt-4 flex items-center ">
           <p className="   text-2xl font-bold  font-Imprima  dark:text-white ">

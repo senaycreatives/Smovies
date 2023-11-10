@@ -20,7 +20,7 @@ export default function MovieCards({ name, id }) {
           src={data?.Poster !== "N/A" ? data?.Poster : ""}
           width="100%"
           placeholderSrc="placeholder.jpg" // Provide a placeholder image
-          className="rounded-[5px] bg-cover h-[250px] bg-center bg-no-repeat"
+          className=" relative rounded-[5px] bg-cover h-[250px] bg-center bg-no-repeat"
         />
       ) : (
         <div class="flex  justify-center w-full h-[250px] bg-gray-300 rounded   dark:bg-gray-700">
@@ -36,7 +36,7 @@ export default function MovieCards({ name, id }) {
         </div>
       )}
 
-      <div className="moviecard absolute w-full h-full  flex items-center justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 transition-opacity duration-300 cursor-pointer group-hover:opacity-60">
+      <div className="moviecard absolute w-full h-[250px] top-0  flex items-center justify-center   transform  opacity-0 transition-opacity duration-300 cursor-pointer group-hover:opacity-60">
         <FaPlayCircle size={60} className="text-lime-950" />
       </div>
 

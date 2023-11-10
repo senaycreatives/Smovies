@@ -19,20 +19,22 @@ export default function Navbar() {
   };
   return (
     <div className="  h-[70px] w-screen absolute top-0 left-0 z-20 ">
-      <div className=" w-full h-full   navbar flex flex-row justify-between px-2">
+      <div className=" w-full h-full  absolute dark:bg-nightnavcovergrad bg-lightgrad   flex flex-row justify-between px-2">
         <div className="h-full flex flex-row items-center">
           <img src={logo} alt="logo" className=" h-full   object-center" />
-          <h1 className=" font-bold text-white  font-Imprima pt-6">.com</h1>
+          <h1 className=" font-bold dark:text-white text-black  font-Imprima pt-6">
+            .com
+          </h1>
         </div>
         <div className="h-full flex flex-row items-center">
-          <h1 className="  group  hover:text-lime-400 text-white    flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
+          <h1 className="  group  hover:text-lime-400 dark:text-white text-black     flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/" className=" pr-5 text-[14px]">
               {" "}
               HOME
             </Link>
             <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
           </h1>
-          <h1 className="  group  hover:text-lime-400 text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
+          <h1 className="  group  hover:text-lime-400 dark:text-white text-black   flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/movie" className=" pr-5 text-[14px]">
               {" "}
               MOVIE
@@ -40,7 +42,7 @@ export default function Navbar() {
             <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px]  group-hover:bg-lime-400"></div>
           </h1>
 
-          <h1 className="  group  hover:text-lime-400 text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
+          <h1 className="  group  hover:text-lime-400 dark:text-white text-black   flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/tvseries" className=" pr-5 text-[14px]">
               {" "}
               TVSERIES
@@ -48,7 +50,7 @@ export default function Navbar() {
             <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
           </h1>
 
-          <h1 className=" group   hover:text-lime-400 text-white  flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
+          <h1 className=" group   hover:text-lime-400 dark:text-white text-black   flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/Genre" className=" pr-5 text-[14px]">
               {" "}
               GENERE
@@ -57,7 +59,10 @@ export default function Navbar() {
           </h1>
         </div>
         <div className="h-full flex flex-row items-center mx-4">
-          <AiOutlineSearch size={25} className=" text-white mx-2" />
+          <AiOutlineSearch
+            size={25}
+            className=" dark:text-white text-black  mx-2"
+          />
           <DarkModeSwitch
             checked={darkSide}
             onChange={toggleDarkMode}
@@ -66,10 +71,10 @@ export default function Navbar() {
           />
           <div className=" h-full flex items-center justify-center mx-2">
             <BiWorld size={25} className=" text-lime-500  mx-1" />
-            <h1 className=" font-bold text-white text-[15px] font-Imprima ">
+            <h1 className=" font-bold dark:text-white text-black  text-[15px] font-Imprima ">
               Eng
             </h1>
-            <FaAngleDown className=" text-white" />
+            <FaAngleDown className=" dark:text-white text-black" />
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ function Movie() {
   const { data } = UseFetchNewTv();
   const { data: adds } = UseFetchAddTv();
   return (
-    <div className="pt-[70px] min-h-screen dark:bg-zinc-900 bg-zinc-200 min-w-screen ">
+    <div className="pt-[70px] min-h-screen pb-3 dark:bg-zinc-900 bg-zinc-200 min-w-screen ">
       <Navbar />
       <div className="bg-cuspage min-h-screen w-screen bg-cover">
         <div className=" w-full h-[50px]  pt-4 flex items-center ">

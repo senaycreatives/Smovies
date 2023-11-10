@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Genre() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div className=" w-full h-screen"></div>;
 }
 
-export default Genre
+export default Genre;
