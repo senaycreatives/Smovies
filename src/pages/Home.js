@@ -30,27 +30,10 @@ export default function Home() {
           </p>
         </div>
         <div className=" pb-3 w-full mt-5 pl-3  z-10  flex  flex-row flex-wrap">
-          {TV?.result?.items?.map((movie, index) => {
+          {TV?.result?.items.map((movie, index) => {
             return <MovieCards name={movie.title} id={movie.imdb_id} />;
           })}
         </div>
-        {/* <div className=" w-full h-[50px]  pt-4 flex items-center ">
-          <p className="  text-2xl font-bold  font-Imprima  text-white">
-            Latest TvSeries
-          </p>
-        </div>
-        <div className=" pb-3 w-full mt-5 pl-3  z-10  flex  flex-row flex-wrap">
-          <MovieCards />
-          <MovieCards />
-          <MovieCards />
-          <MovieCards />
-          <MovieCards />
-          <MovieCards />
-          <MovieCards />
-          <MovieCards />
-          <MovieCards />
-          <MovieCards />
-        </div> */}
       </div>
     </div>
   );

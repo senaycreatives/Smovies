@@ -22,12 +22,16 @@ export default function Navbar() {
     <div className="   h-[70px] w-screen absolute top-0 left-0 z-20 ">
       <div className="  w-full h-full  absolute dark:bg-nightnavcovergrad bg-lightgrad   flex flex-row justify-between px-2">
         <div className="h-full flex flex-row items-center">
-          <img src={logo} alt="logo" className=" h-full   object-center" />
+          <img
+            src={logo}
+            alt="logo"
+            className=" h-full  w-[70px]  object-center"
+          />
           <h1 className=" font-bold dark:text-white text-black  font-Imprima pt-6">
             .com
           </h1>
         </div>
-        <div className=" sm:visible invisible h-full flex flex-row items-center">
+        <div className=" sm:flex  hidden  h-full flex-row items-center">
           <h1 className="  group  hover:text-lime-400 dark:text-white text-black     flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/" className=" pr-5 text-[14px]">
               {" "}
@@ -59,7 +63,7 @@ export default function Navbar() {
             <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
           </h1>
         </div>
-        <div className="  h-full flex flex-row items-center mx-4">
+        <div className="  sm:visible  hidden h-full flex flex-row items-center mx-4">
           <div className=" h-[35px]  bg-slate-100    bg-opacity-40  w-[300px]">
             <input
               onChange={(e) => setSearch(e.target.value)}
