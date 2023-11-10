@@ -27,7 +27,7 @@ export default function Navbar() {
             .com
           </h1>
         </div>
-        <div className="h-full flex flex-row items-center">
+        <div className=" sm:visible invisible h-full flex flex-row items-center">
           <h1 className="  group  hover:text-lime-400 dark:text-white text-black     flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/" className=" pr-5 text-[14px]">
               {" "}

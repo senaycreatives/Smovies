@@ -11,7 +11,7 @@ import Search from "./pages/Search";
 
 function App() {
   return (
-    <div className=" h-screen  w-screen  select-none  bg-contain  overflow-x-hidden  ">
+    <div className=" h-screen  w-screen  select-none sm:overflow-y-scroll  overflow-hidden bg-contain  overflow-x-hidden  ">
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
