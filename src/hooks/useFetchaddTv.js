@@ -3,7 +3,9 @@ import { useQuery } from "@tanstack/react-query";
 
 export default function UseFetchAddTv() {
   const fetch = async () => {
-    const response = await axios.get("https://vidsrc.to/vapi/tv/new");
+    const response = await axios.get(
+      "https://fda8-196-189-190-239.ngrok-free.app/movies"
+    );
     return response.data;
   };
 

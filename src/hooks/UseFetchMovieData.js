@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 export default function UseFetchMovieData(imdb_id) {
   const fetch = async () => {
     const response = await axios.get(
-      `http://www.omdbapi.com/?i=${imdb_id}&apikey=137680e0`
+      `https://fda8-196-189-190-239.ngrok-free.app/details/${imdb_id}`
     );
     return response.data;
   };
