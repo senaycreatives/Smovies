@@ -20,7 +20,7 @@ export default function Home() {
           </p>
         </div>
         <div className=" pb-3 w-full mt-5 pl-3  z-10  flex  flex-row flex-wrap">
-          {data?.result.items.map((movie, index) => {
+          {data?.result?.items?.map((movie, index) => {
             return <MovieCards name={movie.title} id={movie.imdb_id} />;
           })}
         </div>
@@ -30,7 +30,7 @@ export default function Home() {
           </p>
         </div>
         <div className=" pb-3 w-full mt-5 pl-3  z-10  flex  flex-row flex-wrap">
-          {TV?.result.items.map((movie, index) => {
+          {TV?.result?.items?.map((movie, index) => {
             return <MovieCards name={movie.title} id={movie.imdb_id} />;
           })}
         </div>

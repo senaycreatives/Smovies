@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 export default function UseFetchAddMovie() {
   const fetch = async () => {
     const response = await axios.get(
-      "https://fda8-196-189-190-239.ngrok-free.app/movies"
+      "https://inquisitive-hospital-gown-fish.cyclic.app/movies"
     );
     return response.data;
   };
