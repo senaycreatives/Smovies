@@ -63,7 +63,7 @@ export default function Navbar() {
             <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
           </h1>
         </div>
-        <div className="  sm:visible  hidden h-full flex flex-row items-center mx-4">
+        <div className="  sm:flex  hidden h-full  flex-row items-center mx-4">
           <div className=" h-[35px]  bg-slate-100    bg-opacity-40  w-[300px]">
             <input
               onChange={(e) => setSearch(e.target.value)}
