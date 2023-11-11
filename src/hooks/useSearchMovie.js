@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 export default function UseSearchMovie(searchtext) {
   const fetch = async () => {
     const response = await axios.get(
-      `https://inquisitive-hospital-gown-fish.cyclic.app/search/${searchtext}`
+      `https://intelligent-subdued-tennis.glitch.me/search/${searchtext}`
     );
     return response.data;
   };
