@@ -11,8 +11,9 @@ import Search from "./pages/Search";
 
 function App() {
   return (
-    <div className=" min-h-screen  w-screen  sm:overflow-y-scroll  overflow-y-hidden  select-none  bg-contain  overflow-x-hidden  ">
+    <div className="  bg-black  m-0 w-screen   h-screen  select-none    p-0 bg-contain  sm:scrollbar  overflow-x-hidden ">
       <Navbar />
+
       <Routes>
         <Route index element={<Home />} />
         <Route path="Movie" element={<Movie />} />
@@ -21,7 +22,7 @@ function App() {
         <Route path="/movie/:movieId" element={<MovieDetail />} />
         <Route path="/search/:searchtext" element={<Search />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
