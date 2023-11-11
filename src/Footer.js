@@ -2,8 +2,8 @@ import React from "react";
 import logo from "../src/Asset/logo.svg";
 export default function Footer() {
   return (
-    <div className=" dark:bg-zinc-900  bg-white flex border-t-[1px]  dark:border-lime-400  border-lime-700 items-center justify-center w-full h-[200px]">
-      <div className=" flex items-center  justify-center w-4/5 flex-col">
+    <div className=" dark:bg-zinc-900  bg-white flex border-t-[1px]  dark:border-lime-400  border-lime-700 items-center justify-center w-full sm:h-[200px]">
+      <div className=" flex items-center  justify-center sm:w-4/5 w-full flex-col">
         <img className=" w-[100px] h-[100px] " alt="hell" src={logo} />
         <p className="  dark:text-zinc-300  text-black text-center text-sm font-bold">
           Smovies is top of free streaming website, where to watch movies online

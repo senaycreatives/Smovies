@@ -33,16 +33,16 @@ function MovieDetail() {
           title="Embedded Video"
         ></iframe>
       </div>
-      <div className="  flex   w-11/12 flex-row mt-[50px]">
-        <div className=" flex flex-[0.7]  h-[250px]">
+      <div className="  flex   w-11/12 sm:flex-row flex-col mt-[50px]">
+        <div className=" flex flex-[0.7]  sm:flex-row flex-col h-[250px]">
           <img className=" h-full w-[200px]  " alt="jj" src={data?.Poster} />
           <div className="  flex-1 flex flex-col  px-4">
-            <div className=" h-[50px]   dark:border-b-white border-b-black  border-b-2 flex justify-center flex-col border-opacity-20 ">
+            <div className=" sm:h-[50px]   dark:border-b-white border-b-black  border-b-2 flex justify-center flex-col border-opacity-20 ">
               <p className=" text-2xl dark:text-white text-black font-bold font-Imprima">
                 {data?.Title}
               </p>
             </div>
-            <div className="h-[20px]  mt-1 flex flex-row items-center">
+            <div className="sm:h-[20px]  mt-1 flex flex-row items-center">
               <div className="h-full border-r-2 dark:border-r-white  border-r-black   border-opacity-40 px-2">
                 <p className=" text-sm dark:text-white text-black">
                   {data?.Runtime}
@@ -65,7 +65,7 @@ function MovieDetail() {
                 </p>
               </div>
             </div>
-            <div className="h-[60px]  mt-1 flex flex-row items-center">
+            <div className="sm:h-[60px]  mt-1 flex flex-row items-center">
               <p className=" text-sm dark:text-white text-black ">
                 {data?.Plot}
               </p>
