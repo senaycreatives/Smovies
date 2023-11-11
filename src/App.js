@@ -22,7 +22,7 @@ function App() {
         <Route path="/movie/:movieId" element={<MovieDetail />} />
         <Route path="/search/:searchtext" element={<Search />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
