@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 export default function UseFetchMovieData(imdb_id) {
   const fetch = async () => {
     const response = await axios.get(
-      `https://inquisitive-hospital-gown-fish.cyclic.app/details/${imdb_id}`
+      `https://intelligent-subdued-tennis.glitch.me/details/${imdb_id}`
     );
     return response.data;
   };

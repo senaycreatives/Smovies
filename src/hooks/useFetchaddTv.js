@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 export default function UseFetchAddTv() {
   const fetch = async () => {
     const response = await axios.get(
-      "https://inquisitive-hospital-gown-fish.cyclic.app/tv/add"
+      "https://intelligent-subdued-tennis.glitch.me/tv/add"
     );
     return response.data;
   };
