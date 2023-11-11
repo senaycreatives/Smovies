@@ -65,7 +65,7 @@ function Movie() {
     return (
       <div className=" w-screen h-screen dark:bg-zinc-900  bg-zinc-100 flex  items-center justify-center">
         <div className=" flex items-center justify-center flex-col">
-          <img src={errorimage} className=" w-[200px] h-[200px]" />
+          <img src={errorimage} alt="errors" className=" w-[200px] h-[200px]" />
           <p className="  text-red-600  font-bold">{error.message}</p>
         </div>
       </div>
