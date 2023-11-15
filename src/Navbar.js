@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../src/Asset/logo.svg";
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
 import { BiWorld } from "react-icons/bi";
 import { FaAngleDown } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -13,14 +13,15 @@ export default function Navbar() {
   const [darkSide, setDarkSide] = useState(
     colorTheme === "light" ? true : false
   );
+  const [menuactive,setmenuactive]=useState(false)
 
   const toggleDarkMode = (checked) => {
     setTheme(colorTheme);
     setDarkSide(checked);
   };
   return (
-    <div className="   h-[70px] w-screen absolute top-0 left-0 z-20 ">
-      <div className="  w-full h-full  absolute dark:bg-nightnavcovergrad bg-lightgrad   flex flex-row justify-between px-2">
+    <div className="    h-[70px] w-screen absolute top-0 left-0 z-20 ">
+      <div className="  w-full h-full  absolute dark:bg-nightnavcovergrad bg-lightgrad   flex flex-row items-center justify-between px-2">
         <div className="h-full flex flex-row items-center">
           <img
             src={logo}
@@ -31,17 +32,22 @@ export default function Navbar() {
             .com
           </h1>
         </div>
+        <div className="  w-[30px] h-[30px] " onClick={()=>setmenuactive(!menuactive)}>
+        <AiOutlineMenu className=" text-black font-bold" size={34}/>
+      </div>
+      
+        
         <div className=" sm:flex  hidden  h-full flex-row items-center">
           <h1 className="  group  hover:text-lime-400 dark:text-white text-black     flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/" className=" pr-5 text-[14px]">
-              {" "}
+             
               HOME
             </Link>
             <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
           </h1>
           <h1 className="  group  hover:text-lime-400 dark:text-white text-black   flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/movie" className=" pr-5 text-[14px]">
-              {" "}
+             
               MOVIE
             </Link>
             <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px]  group-hover:bg-lime-400"></div>
@@ -49,7 +55,7 @@ export default function Navbar() {
 
           <h1 className="  group  hover:text-lime-400 dark:text-white text-black   flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/tvseries" className=" pr-5 text-[14px]">
-              {" "}
+             
               TVSERIES
             </Link>
             <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
@@ -57,12 +63,13 @@ export default function Navbar() {
 
           <h1 className=" group   hover:text-lime-400 dark:text-white text-black   flex flex-row  items-center border-white   text-[15px] font-Imprima mx-5 ">
             <Link to="/Genre" className=" pr-5 text-[14px]">
-              {" "}
+             
               GENERE
             </Link>
             <div className=" w-[1px] h-[9px] bg-white transition-all duration-150 group-hover:h-[19px] group-hover:bg-lime-400"></div>
           </h1>
         </div>
+       
         <div className="  sm:flex  hidden h-full  flex-row items-center mx-4">
           <div className=" h-[35px]  bg-slate-100    bg-opacity-40  w-[300px]">
             <input
@@ -95,6 +102,24 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+    
+      <div className={` w-full h-screen top-0 left-0 absolute  m-0 p-0 sm:hidden  ${menuactive?'flex':'hidden'}  flex-row `}>
+      <div className=" flex-[0.2] h-full   dark:bg-zinc-800 dark:bg-opacity-50  bg-zinc-400  backdrop-blur-md  bg-opacity-20" onClick={()=>setmenuactive(false)}></div>
+      <div className=" relative flex-[0.8] h-full  bg-zinc-800  flex items-center  flex-col  pt-16">
+        <div className=" absolute duration-700 top-0 ml-3 mt-3  left-0 w-[40px] h-[40px]  "> <DarkModeSwitch
+            checked={darkSide}
+            onChange={toggleDarkMode}
+            sunColor="orange"
+            size={25}
+          /></div>
+        <div className=" w-full h-[70px] bg-zinc-700 bg-opacity-30 flex items-center justify-center mt-3"><p className=" text-white  text-lg">Home</p></div>
+        <div className=" w-full h-[70px] bg-zinc-700 bg-opacity-30 flex items-center justify-center mt-3"><p className=" text-white  text-lg">Home</p></div>
+        <div className=" w-full h-[70px] bg-zinc-700 bg-opacity-30 flex items-center justify-center mt-3"><p className=" text-white  text-lg">Home</p></div>
+        <div className=" w-full h-[70px] bg-zinc-700 bg-opacity-30 flex items-center justify-center mt-3"><p className=" text-white  text-lg">Home</p></div>
+      </div>
+      </div>
+    
+     
     </div>
   );
 }
